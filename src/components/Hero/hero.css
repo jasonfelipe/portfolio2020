@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* The hero image */
+.hero-image {
+  margin: 0 auto;
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../../assets/images/ibaraki.jpg');
+  height: 750px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+ .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+} 
+
+@media only screen and (max-width: 640px) {
+ 
+  .hero-image {
+    margin: 0 auto;
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../../assets/images/ibaraki.jpg');
+    height: 250px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+}
