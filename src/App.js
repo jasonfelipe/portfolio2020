@@ -4,6 +4,7 @@ import './App.css';
 
 import Main from './pages/Main';
 import Hero from './components/Hero';
+import Wrapper from './components/Wrapper';
 
 
 const App = () => {
@@ -21,8 +22,10 @@ const App = () => {
   <>
     <Hero
         job={job}
-    />    
-    <Main/>
+    />
+    <Wrapper>
+      <Main/>
+    </Wrapper>    
   </>
   );
 }
