@@ -1,17 +1,22 @@
 import React, {useState} from 'react';
-import Hero from '../components/Hero';
 import Techbar from '../components/Techbar';
 import Card from '../components/Card';
+import './main.css';
 
 const Main = () => {
-    const [search, setSearch] = useState(null); 
+    const [search, setSearch] = useState(null);
+
     const handleTechQuery = event => {
         let { id } = event.target;
-        console.log('Hey lol', id);
+        setSearch(id);
     }
 
     return <>
         <Techbar handleTechBarClick={handleTechQuery}/>
+        {search ? 
+            <h1>Now Showing Projects with {search}! </h1>
+            : null
+        }
         <Card
             title='Example'
             text='something'

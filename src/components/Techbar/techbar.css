@@ -1,0 +1,35 @@
+.techbar {
+    position: relative;          
+    display: inline-block;     
+    left: 50%;                   
+    transform: translate(-50%);  
+}
+
+.techSvg {
+    width: 100px;
+    height: 100px;
+    position:relative;
+    margin: 5px;
+    z-index: -1;
+    color: white;
+}
+
+button {
+    background-color: black;
+    opacity: 0.2;
+    color: white;
+    border: none;
+
+}
+@media only screen and (max-width: 640px) {
+    /* .techbar svg {
+        position: relative;          
+        display: inline-block;       
+        left: 20%;                 
+        transform: translate(-50%);
+    }
+
+    .icon {
+        height: 10px;
+    } */
+}
