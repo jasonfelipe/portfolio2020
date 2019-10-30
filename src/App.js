@@ -5,6 +5,7 @@ import './App.css';
 import Main from './pages/Main';
 import Hero from './components/Hero';
 
+
 const App = () => {
   const [job, setJob] = useState('Human');
 
