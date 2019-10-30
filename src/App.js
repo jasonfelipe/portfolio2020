@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-import './App.css';
 
 import Main from './pages/Main';
 import Hero from './components/Hero';

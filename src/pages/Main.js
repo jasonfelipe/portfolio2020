@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-
+import Card from '../components/Card';
 
 const Main = () => {
     const handleClick = event => {
@@ -8,8 +8,10 @@ const Main = () => {
     }
 
     return <>
-        <p>Hey</p>
-
+        <Card
+            title='Example'
+            text='something'
+        />
     </>
 }
 

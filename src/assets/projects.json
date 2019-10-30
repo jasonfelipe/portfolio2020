@@ -1,0 +1,7 @@
+{
+"projects":[    
+        {"name":"Marvel Collab Finder", "description":"some project", "github":"someplace", "link": "somewhere"},    
+        {"name":"AHI Scanner", "description":"some project", "github":"someplace", "link": "somewhere"},    
+        {"name":"OpenRoom", "description":"some project", "github":"someplace", "link": "somewhere"}
+    ]
+}  
