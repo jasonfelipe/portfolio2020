@@ -1,5 +1,5 @@
 {
-"projects":[    
+"Projects":[    
         {"name":"Marvel Collab Finder", "description":"some project", "github":"someplace", "link": "somewhere", "tech":["firebase"]},    
         {"name":"AHI Scanner", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["react", "mongo", "express", "node"]},    
         {"name":"OpenRoom", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["mysql", "express", "jquery", "node"]}
