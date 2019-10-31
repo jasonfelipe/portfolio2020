@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react';
 import Main from './pages/Main';
 import Hero from './components/Hero';
 import Wrapper from './components/Wrapper';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -24,7 +25,8 @@ const App = () => {
     />
     <Wrapper>
       <Main/>
-    </Wrapper>    
+    </Wrapper>
+    <Footer></Footer>    
   </>
   );
 }
