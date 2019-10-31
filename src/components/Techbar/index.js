@@ -25,10 +25,6 @@ const Techbar = props => {
             <button id='node' onClick={props.handleTechBarClick}>
                 <DiNodejsSmall className='techSvg'/>
             </button>
-
-            <button id='' onClick={props.handleTechBarClick}>
-                Clear
-            </button>
         </div> 
     )
 }

@@ -5,22 +5,40 @@ import './main.css';
 
 const Main = () => {
     const [search, setSearch] = useState(null);
+    const [projects, setProjects] = useState([{title: "Hey", text: "Hello"}]);
 
-    const handleTechQuery = event => {
+
+    const handleTechQueryButton = event => {
         let { id } = event.target;
         setSearch(id);
     }
 
+    const handleSearch = (searchArray = null, projectsJson) => {
+        let shownProjects = []
+        projectsJson.forEach(project => {
+            if (searchArray.includes(project.technology)) shownProjects.push(project);
+        });
+        setProjects(shownProjects);
+    }
+
     return <>
-        <Techbar handleTechBarClick={handleTechQuery}/>
-        {search ? 
-            <h1>Now Showing Projects with {search}! </h1>
-            : null
+        <Techbar handleTechBarClick={handleTechQueryButton}/>
+        {search ?
+        <div className='center'>
+            <h1 >Now Showing Projects with {search}! </h1>
+            <button className='clear-button' id='' onClick={handleTechQueryButton}>
+                Clear Search
+            </button>
+        </div> : null
         }
+
+        {projects.map(project => 
+        
         <Card
-            title='Example'
-            text='something'
-        />
+            title={project.title}
+            text={project.text}
+        />)}
+
     </>
 }
 
