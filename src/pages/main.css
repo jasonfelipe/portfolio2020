@@ -1,10 +1,15 @@
 .center {
-    text-align: center;
+    display:block;
     margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .clear-button {
     border: 3px solid white;
     color: yellow;
     opacity: 1;
+    margin-bottom: 10px;
 }

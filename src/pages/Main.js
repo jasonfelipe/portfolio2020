@@ -18,7 +18,7 @@ const Main = () => {
         <div>
             <Techbar handleTechBarClick={handleTechQueryButton}/>
             {search ?
-            <div className='center'>
+            <div className='center-text'>
                 <h1 >Now Showing Projects with {search}! </h1>
                 <button className='clear-button' id='' onClick={handleTechQueryButton}>
                     Clear Search
@@ -27,7 +27,7 @@ const Main = () => {
             }
         </div>
 
-        <div className="row">
+        <div className="d-flex justify-content-center">
             {projects.map((project, index) => 
                 <Card
                     key={index}

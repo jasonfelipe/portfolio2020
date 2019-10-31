@@ -5,7 +5,7 @@ import './techbar.css';
 
 const Techbar = props => {
     return(
-        <div className='techbar'>
+        <div className='d-flex justify-content-center'>
             <button id='react' onClick={props.handleTechBarClick}>
                 <DiReact className='techSvg'/>
             </button>
