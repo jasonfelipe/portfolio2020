@@ -8,3 +8,10 @@
     padding-right: 10px; /* 3 */
     padding-left:  10px; /* 3 */
 }
+
+
+@media only screen and (max-width: 375px) {
+    .wrapper{
+        height:900px;
+    }
+}

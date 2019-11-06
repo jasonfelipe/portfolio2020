@@ -47,17 +47,17 @@ const Main = () => {
             }
         </div>
 
-        <div className="d-flex justify-content-center">
+        <div className="cards-container">
             {projects.map((project, index) =>
-                <Card
-                    github={project.github}
-                    link={project.link}
-                    key={index}
-                    title={project.name}
-                    text={project.description}
-                    onClick={handleCardButtonClick}
-                />)
-            }
+                    <Card
+                        github={project.github}
+                        link={project.link}
+                        key={index}
+                        title={project.name}
+                        text={project.description}
+                        onClick={handleCardButtonClick}
+                    />
+                )}
         </div>
     </>
 }

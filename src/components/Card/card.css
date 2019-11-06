@@ -8,6 +8,7 @@
 
 .card{
     background-color: rgb(133, 133, 133);
+    width: 18rem;
     margin: 10px;
     float: left;
 }

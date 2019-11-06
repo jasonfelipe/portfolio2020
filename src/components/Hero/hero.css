@@ -34,7 +34,6 @@ body {
 }
 
 
-/* Place text in the middle of the image */
  .hero-text {
   text-align: center;
   position: absolute;
@@ -70,6 +69,45 @@ body {
   }
   
 }
+
+@media only screen and (max-width: 375px) {
+  .hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../../assets/images/ibaraki.jpg');
+    height: 650px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .icon {
+    width: 75px;
+    height: 75px;
+    position:relative;
+    margin: 5px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  } 
+
+  .hero-subtitle{
+    position: relative;
+    top: 50px;
+    color: white;
+    font-size: 2em;
+  }
+
+}
+
+
 
 /* ======================== */
 /* Fade In Animations Start */
