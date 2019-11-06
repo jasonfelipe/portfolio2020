@@ -22,7 +22,6 @@ body {
 
   animation: fadeinout 3s infinite;    
   animation-duration: 8s;
-
   opacity: 0;
 }
 
@@ -31,7 +30,6 @@ body {
   top: 50px;
   color: white;
   opacity: 0;
-  width: 100%;
   -webkit-animation: fadeout 1s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadeout 1s;
@@ -125,6 +123,7 @@ body {
     top: 50px;
     color: white;
     font-size: 2em;
+
   }
 
 }

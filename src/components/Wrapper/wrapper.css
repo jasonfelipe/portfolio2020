@@ -13,5 +13,6 @@
 @media only screen and (max-width: 375px) {
     .wrapper{
         height:900px;
+        max-width:650px;
     }
 }
