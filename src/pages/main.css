@@ -19,3 +19,9 @@
     background-color: white;
     color: red;
 }
+
+.results-header {
+    border-bottom: 2px rgb(55, 55, 55) solid;
+    padding-bottom: 15px;
+}
+

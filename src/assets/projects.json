@@ -1,7 +1,8 @@
 {
 "Projects":[    
-        {"name":"Marvel Collab Finder", "description":"some project", "github":"someplace", "link": "somewhere", "tech":["firebase", "jquery"]},    
-        {"name":"AHI Scanner", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["reactjs", "mongodb", "expressjs", "nodejs"]},    
-        {"name":"OpenRoom", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["mysql", "express", "jquery", "nodejs"]}
+        {"name":"Marvel Collab Finder", "description":"some project", "github":"https://github.com/jasonfelipe/Marvel-Collab-Finder", "link": "somewhere", "tech":["firebase", "jquery"]},    
+        {"name":"AHI Scanner", "description":"some project", "github":"https://github.com/jasonfelipe/AHI-Scanner", "link": "somewhere", "tech": ["react", "mongodb", "expressjs", "nodejs"]},    
+        {"name":"OpenRoom", "description":"some project", "github":"https://github.com/jasonfelipe/0penroom", "link": "somewhere", "tech": ["mysql", "expressjs", "jquery", "nodejs"]},
+        {"name":"Old Portfolio", "description":"2019 Portfolio", "github":"https://github.com/jasonfelipe/Portfolio-3.0", "link": "somewhere", "tech": ["mongodb", "expressjs", "nodejs", "reactjs"]}
     ]
 }  

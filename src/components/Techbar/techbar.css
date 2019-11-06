@@ -14,13 +14,20 @@
     color: teal;
 }
 
-button {
+.btn-svg {
     background-color: black;
     opacity: .9;
     color: white;
     border: none;
-
 }
+
+.btn-svg:active {
+    background-color: white;
+    color: black;
+    opacity: .5;
+}
+
+
 @media only screen and (max-width: 640px) {
     /* .techbar svg {
         position: relative;          

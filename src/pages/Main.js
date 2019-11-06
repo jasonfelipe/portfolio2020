@@ -29,26 +29,33 @@ const Main = () => {
         setSearch('');
     };
 
+    const handleCardButtonClick = event => {
+        const { value } = event.target;
+        return window.open(value, '_blank');
+    }
 
     return <>
         <div>
             <Techbar handleTechBarClick={handleTechQueryButton} />
             {search ?
                 <div className='center-text'>
-                    <h1>Showing Projects with {search}! </h1>
                     <button className='btn clear-button' id='' onClick={handleClearSearch}>
                         Clear Search
-                </button>
-                </div> : <h1 className='center-text'>Showing All Projects!</h1>
+                    </button>
+                    <h1 className='results-header center-text'>Showing Projects with {search}! </h1>
+                </div> : <h1 className=' results-header center-text'>Showing All Projects!</h1>
             }
         </div>
 
         <div className="d-flex justify-content-center">
             {projects.map((project, index) =>
                 <Card
+                    github={project.github}
+                    link={project.link}
                     key={index}
                     title={project.name}
                     text={project.description}
+                    onClick={handleCardButtonClick}
                 />)
             }
         </div>
