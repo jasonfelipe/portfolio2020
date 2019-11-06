@@ -6,7 +6,6 @@ body {
 /* The hero image */
 .hero-image {
   margin: 0 auto;
-  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('../../assets/images/ibaraki.jpg');
   height: 600px;
   width: auto;
@@ -16,23 +15,46 @@ body {
   position: relative;
 }
 
-.hero-subtitle {
+.hero-subtext{
+  font-size:16pt;
+  -webkit-animation: fadeinout 3s infinite ;
+  -webkit-animation-duration: 8s;
+
+  animation: fadeinout 3s infinite;    
+  animation-duration: 8s;
+
+  opacity: 0;
+}
+
+.hero-info {
   position: relative;
   top: 50px;
   color: white;
   opacity: 0;
-  
-  -webkit-animation: fadein 4s;
+  width: 100%;
+  -webkit-animation: fadeout 1s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s;
+  -moz-animation: fadeout 1s;
   /* Firefox < 16 */
-  -ms-animation: fadein 4s;
+  -ms-animation: fadeout 1s;
   /* Internet Explorer */
-  -o-animation: fadein 4s;
+  -o-animation: fadeout 1s;
   /* Opera < 12.1 */
-  animation: fadein 5s forwards;
+  animation: fadeout 1s forwards
+
 }
 
+.hero-info:hover{
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s forwards;
+}
 
  .hero-text {
   text-align: center;
@@ -98,7 +120,7 @@ body {
     color: white;
   } 
 
-  .hero-subtitle{
+  .hero-info{
     position: relative;
     top: 50px;
     color: white;
@@ -167,3 +189,78 @@ body {
   }
 }
 /* Fade In Animations End */
+
+/* ======================== */
+/* Fade Out Animations Start */
+/* ======================== */
+
+@keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+/* Fade Out Animations End */
+
+
+/* ======================== */
+/* Fade In AND Out Animations Start */
+/* ======================== */
+
+
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
+
+/* Fade In and Out Animations End */

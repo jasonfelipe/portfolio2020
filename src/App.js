@@ -13,7 +13,7 @@ const App = () => {
   let changeJob = () =>{
     let jobArray = ['Teacher', 'Student', 'Programmer'];
     let counter = 0; 
-    setInterval(() => {setJob(jobArray[counter]); counter++; if (counter===jobArray.length) counter = 0;}, 2000)
+    setInterval(() => {setJob(jobArray[counter]); counter++; if (counter===jobArray.length) counter = 0;}, 8000)
   }
 
   useEffect(changeJob, []);
