@@ -1,7 +1,7 @@
 {
 "Projects":[    
-        {"name":"Marvel Collab Finder", "description":"some project", "github":"someplace", "link": "somewhere", "tech":["firebase"]},    
-        {"name":"AHI Scanner", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["react", "mongo", "express", "node"]},    
-        {"name":"OpenRoom", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["mysql", "express", "jquery", "node"]}
+        {"name":"Marvel Collab Finder", "description":"some project", "github":"someplace", "link": "somewhere", "tech":["firebase", "jquery"]},    
+        {"name":"AHI Scanner", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["reactjs", "mongodb", "expressjs", "nodejs"]},    
+        {"name":"OpenRoom", "description":"some project", "github":"someplace", "link": "somewhere", "tech": ["mysql", "express", "jquery", "nodejs"]}
     ]
 }  

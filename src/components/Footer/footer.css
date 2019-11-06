@@ -1,5 +1,8 @@
 footer {
-    color: pink;
+    height:50px;
+    padding-top: 15px;   
+    color: teal;
+    background-color: black;
     position: fixed;
     left: 0;
     bottom: 0;

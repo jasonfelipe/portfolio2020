@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Techbar from '../components/Techbar';
 import Card from '../components/Card';
-import { Projects } from '../assets/projects.json'
+import { Projects } from '../assets/projects.json';
 import './main.css';
-console.log(Projects)
 
 const Main = () => {
     const [search, setSearch] = useState(null);
@@ -12,23 +11,40 @@ const Main = () => {
     const handleTechQueryButton = event => {
         let { id } = event.target;
         setSearch(id);
-    }
+        handleProjectSearch(id.toLowerCase());
+    };
+
+    const handleProjectSearch = tech => {
+        const projectArray = [];
+        Projects.forEach(project => {
+            if (project.tech.includes(tech)) {
+                projectArray.push(project);
+            };
+        });
+        setProjects(projectArray);
+    };
+
+    const handleClearSearch = () => {
+        setProjects(Projects);
+        setSearch('');
+    };
+
 
     return <>
         <div>
-            <Techbar handleTechBarClick={handleTechQueryButton}/>
+            <Techbar handleTechBarClick={handleTechQueryButton} />
             {search ?
-            <div className='center-text'>
-                <h1 >Now Showing Projects with {search}! </h1>
-                <button className='clear-button' id='' onClick={handleTechQueryButton}>
-                    Clear Search
+                <div className='center-text'>
+                    <h1>Showing Projects with {search}! </h1>
+                    <button className='btn clear-button' id='' onClick={handleClearSearch}>
+                        Clear Search
                 </button>
-            </div> : null
+                </div> : <h1 className='center-text'>Showing All Projects!</h1>
             }
         </div>
 
         <div className="d-flex justify-content-center">
-            {projects.map((project, index) => 
+            {projects.map((project, index) =>
                 <Card
                     key={index}
                     title={project.name}
@@ -36,7 +52,6 @@ const Main = () => {
                 />)
             }
         </div>
-
     </>
 }
 

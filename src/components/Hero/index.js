@@ -11,6 +11,7 @@ const Hero = props => {
             <p>And I'm a {props.job}</p>
             <FaGithubSquare className='icon'/>
             <FaLinkedin className='icon'/>
+            <h1 className='hero-subtitle'>Scroll Down For Projects!</h1>
         </div>
 
     </div>

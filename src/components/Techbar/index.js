@@ -6,23 +6,23 @@ import './techbar.css';
 const Techbar = props => {
     return(
         <div className='d-flex justify-content-center'>
-            <button id='react' onClick={props.handleTechBarClick}>
+            <button id='ReactJS' onClick={props.handleTechBarClick}>
                 <DiReact className='techSvg'/>
             </button>
 
-            <button id='jquery' onClick={props.handleTechBarClick}>
+            <button id='jQuery' onClick={props.handleTechBarClick}>
                 <DiJqueryLogo className='techSvg'/>
             </button>
 
-            <button id='mongo' onClick={props.handleTechBarClick}>
+            <button id='MongoDB' onClick={props.handleTechBarClick}>
                 <DiMongodb className='techSvg'/>
             </button>
 
-            <button id='mysql' onClick={props.handleTechBarClick}>
+            <button id='MySQL' onClick={props.handleTechBarClick}>
                 <DiMysql className='techSvg'/>
             </button>
 
-            <button id='node' onClick={props.handleTechBarClick}>
+            <button id='NodeJS' onClick={props.handleTechBarClick}>
                 <DiNodejsSmall className='techSvg'/>
             </button>
         </div> 
