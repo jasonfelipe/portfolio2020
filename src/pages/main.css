@@ -1,3 +1,7 @@
+body {
+    background-color: black !important;
+}
+
 .center {
     display:block;
     margin: 0 auto;
@@ -9,15 +13,16 @@
 
 .clear-button {
     margin-top: 10px;
-    border: 3px solid white;
-    color: yellow;
+    border: 3px solid white !important;
+    color: yellow !important;
     opacity: 1;
     margin-bottom: 10px;
+
 }
 
 .clear-button:hover {
     background-color: white;
-    color: red;
+    color: red !important;
 }
 
 .cards-container {
@@ -27,11 +32,16 @@
 }
 
 .results-header {
+    color: white;
     border-bottom: 2px rgb(55, 55, 55) solid;
     padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 375px) {
+    body{
+        max-width: 355px !important;
+    }
+
     .results-header {
         margin-top:15px;
         font-size: 28px;
@@ -41,6 +51,7 @@
 
     .cards-container{
         position: relative;
-        left: 30px;
+        left: 25px;
+        min-height: 1100px;
     }
 }

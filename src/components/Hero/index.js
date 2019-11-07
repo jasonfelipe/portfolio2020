@@ -15,7 +15,7 @@ const Hero = props => {
         <div className="hero-image">
             <div className="hero-text">
                 <h1>I am Jason Felipe</h1>
-                <p className='hero-subtext'>And I'm a {props.job}</p>
+                <p className='hero-subtext'>I'm a {props.job}</p>
                 <FaGithubSquare onClick={handleLinkClick} id='github' className='icon'/>
                 <FaLinkedin onClick={handleLinkClick} id='linkedin' className='icon'/>
             <h1 className='hero-info'>Scroll Down For Projects!</h1>

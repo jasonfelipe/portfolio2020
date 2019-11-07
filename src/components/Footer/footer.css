@@ -9,3 +9,9 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+@media only screen and (max-width: 375px) {
+    footer {
+        width: 375px;
+    }
+}
